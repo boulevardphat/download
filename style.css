@@ -751,9 +751,13 @@ body {
     transform: scale(1.1); 
 }
 
+/* ========================================================
+   FIX LỖI CẮT MẤT DẤU (NẶNG, Y, G) KHI XUẤT ẢNH CANVAS
+   ======================================================== */
 .info-area {
     flex: 1;
-    overflow: hidden;
+    /* CHÚ Ý: Đổi thành visible để không bị canvas cắt nét chữ */
+    overflow: visible; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -770,18 +774,15 @@ body {
     display: block;
 }
 
-/* ========================================================
-   FIX LỖI CẮT MẤT DẤU (NẶNG, Y, G) KHI XUẤT ẢNH CANVAS
-   ======================================================== */
 .value {
     font-size: 14px;
     font-weight: 700;
     color: #1e293b;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* CHÚ Ý: Đổi thành visible để phần thò xuống (như g, p, y, ặ) không bị xén */
+    overflow: visible; 
     display: block; 
-    line-height: 1.4; 
+    line-height: 1.5; 
     padding-bottom: 4px; 
 }
 
@@ -1360,8 +1361,9 @@ a, button, .nav-link, .card-container, .disk-body, .feedback-btn {
         text-align: center; 
         font-size: 15px; 
         width: 100%; 
-        line-height: 1.4;
+        line-height: 1.5;
         padding-bottom: 4px;
+        overflow: visible;
     }
     
     .keywords { justify-content: center; margin-top: 5px; flex-wrap: wrap; gap: 8px; }
