@@ -182,7 +182,7 @@ const membersData =[
     { group: 2, name: "Phạm Bảo Linh", role: "Sao đỏ", img: "image/avatars/PBL.jpg", dob: "03/11/2008", keywords:["Ấm áp", "Âm thầm", "Nghệ sĩ"], bio: "Mình là Bảo Linh, hay còn là \"blin ơi\", \"ninh ơi\", \"blu\"…<br><br>Mình là một tâm hồn khao khát khám phá. Muốn đi nhiều nơi, gặp nhiều người, học thêm thật nhiều điều mới và cảm nhận hết những gì mình có thể. Mình biết ơn bản thân vì đã dám sống hết mình, dám thử những điều chưa từng, dám sai, dám đối diện cả những lúc bản thân yếu lòng và không hoàn hảo.<br><br>Mình rất trân trọng mỗi khi có \"quality time\" bên người mình thương. Mình thích chụp lại những điều rất nhỏ trong đời (bởi z nên điện thoại 512gb mà hết 400gb hình rùi hihi). Để kể cho nghe 400gb đó có những gì nha:<br><br>Ba năm ở Hùng Vương trôi nhanh như một giấc mơ đẹp, nhưng mình đã kịp gói ghém vào đó rất nhiều \"kho báu\" - Là A2K28, là The Clef, là HVC, CDTTBP, và hơn cả là những người anh, em, chị, bạn nơi đây. Mình được học, được sai, được sửa, được trưởng thành. Và hơn hết, mình đã tìm thấy những người bạn luôn ở bên, cổ vũ mình bước ra khỏi vùng an toàn, tiếp thêm sức mạnh mỗi khi mình chùn bước, và vực mình dậy mỗi khi sợ hãi lo âu bao quanh. Mình yêu mọi người nhiều lắm lắm, đặc biệt là A2 của mình. Cảm ơn lớp vì đã cùng mình đi qua ba năm rất rực rỡ, đã giúp mình trưởng thành hơn từng chút một, và song song với đó, A2 đã chữa lành mình từ những điều rất nhỏ thôi à.<br><br>Cảm ơn vì đã đi cùng nhau. Viết cũng đã dài, kết lại, mình mong rằng sau này dù đi đâu chăng nữa chúng mình vẫn sẽ luôn dõi về nhau nha. Mong cho mỗi chúng ta đều sẽ phát triển thật rực rỡ trên con đường riêng, mình tự hào về mọi người lắmm. I love all of you guys<br><br>\"to a new chapter. may it be the best one written yet\"" },
     { group: 2, name: "Thái Trần Bảo Châu", role: "", img: "image/avatars/TTBC.jpg", dob: "26/11/2008", keywords:["điềm đạm", "chân thành", "hòa đồng"], bio: "Tui rất vui vì đã được là một phần của A2-K28. A2 đã đem đến cho tui những trải nghiệm mới mẻ và những kỉ niệm khó quên. Ở đây, tui không chỉ được học kiến thức mà còn học cách trưởng thành qua từng hoạt động, buổi học và kỉ niệm cùng thầy cô, bạn bè. Những lần cùng nhau cố gắng, cùng cười và cả những lúc chưa hoàn hảo đã giúp tui hiểu hơn về giá trị của sự đoàn kết và sẻ chia. Cảm ơn A2 đã xuất hiện trong hành trình phát triển của tui!" },
     { group: 2, name: "Hà Thị Ánh Dương", role: "", img: "image/avatars/HTÁD.jpg", dob: "27/01/2008", keywords:["Vui vẻ", "thân thiện"], bio: "Tui yêu 12A2 nhiều lắm, yêu theo cách mà mỗi lần nghĩ tới thôi tim cũng thấy ấm lại. Tui thật sự biết ơn, biết ơn rất nhiều vì được là một phần của 12A2, được học chung, cười chung, buồn chung và lớn lên cùng các bạn. Cảm ơn 12A2 vì đã cho tui những kỷ niệm đẹp đẽ, trong veo và dễ thương đến mức sau này nhớ lại chắc chắn sẽ mỉm cười. Những giờ học, những lần nói chuyện vu vơ, những tiếng cười trong lớp… tất cả đều là thanh xuân của tui.<br>Tui cũng muốn nói lời cảm ơn chính bản thân mình. Cảm ơn vì đã không bỏ cuộc, vì đã cố gắng từng ngày dù có lúc mệt mỏi, áp lực, muốn chuyển trường, muốn trốn đi đâu đó. Cảm ơn vì đã đủ mạnh mẽ để vượt qua peer pressure, vượt qua những ngày thấy mình lạc lõng và yếu đuối. Cảm ơn vì đã ở lại, đã kiên trì, để hôm nay có thể tự hào nhìn lại và nói rằng: \"Mình đã làm được gòiiiii.\"<br>12A2 không chỉ là một lớp học, mà là một phần ký ký ức, một phần thanh xuân, một phần trái tim của tui. Thật sự biết ơn và trân trọng vô cùng 💗💗💗" },
-    { group: 2, name: "Phạm Đức Anh", role: "", img: "image/avatars/PĐA.jpg", dob: "28/10/2008", keywords:["Hiền lành", "tốt bụng", "hay lắng nghe"], bio: "Mình là một người luôn mang trong mình nhiều ước mơ và khát vọng. Hồi nhỏ, ước mơ của mình là trở thành một phi công, được bay trên bầu trời cao rộng và khám phá những vùng đất mới. Dù ước mơ ấy có thay đổi theo thời gian, nhưng nó đã nuôi dưỡng trong mình tinh thần dám nghĩ, dám ước và không ngừng cố gắng. Trên hành trình trưởng thành, mình đã trải qua nhiều kỉ niệm đáng nhớ, cả vui lẫn buồn. Những trải nghiệm ấy giúp mình học được cách mở lòng, tự tin hơn, biết lắng nghe và thấu hiểu bản thân cũng như mọi người xung quanh. Chính sự thay đổi trong suy nghĩ và thái độ sống đã giúp mình ngày càng hoàn thiện hơn so với trước kia." },
+    { group: 2, name: "Phạm Đức Anh", role: "", img: "image/avatars/PĐA.jpg", dob: "28/10/2008", keywords:["Hiền lành", "tốt bụng", "hay lắng nghe"], bio: "Mình là một người luôn mang trong mình nhiều ước mơ và khát vọng. Hồi nhỏ, ước mơ của mình là trở thành một phi công, được bay trên bầu trời cao rộng và khám phá những vùng đất mới. Dù ước mơ ấy có thay đổi theo thời gian, nhưng nó đã nuôi dưỡng trong mình tinh thần dám nghĩ, dám ước và không ngừng cố gắng. Trên hành trình trưởng thành, mình đã trải qua nhiều kỉ niệm đáng nhớ, cả vui lẫn buồn. Những trải nghiệm ấy giúp mình học được cách mở lòng, tự tự tin hơn, biết lắng nghe và thấu hiểu bản thân cũng như mọi người xung quanh. Chính sự thay đổi trong suy nghĩ và thái độ sống đã giúp mình ngày càng hoàn thiện hơn so với trước kia." },
     { group: 2, name: "Nguyễn Ngọc Như Hiếu", role: "", img: "image/avatars/NNNH.jpg", dob: "22/01/2008", keywords:["Sáng nắng chiều mưa", "chủ đề nào cũng có", "hát cả ngày"], bio: "Mình từng là một đứa khá mơ hồ về tương lai, nhưng theo thời gian, mình học được cách ước mơ rõ ràng hơn. Mình muốn vào một ngôi trường tốt, muốn xinh hơn, tự tự tin hơn và biết giữ gìn những mối quan hệ quý giá. Những ngày học ở đây có áp lực, có mệt mỏi, nhưng cũng đầy ắp niềm vui. Mình hạnh phúc vì được là một phần của 12A2. Mong rằng sau khi ra trường, chúng mình vẫn còn những buổi đi chơi, cà phê cùng nhau, vẫn giữ liên lạc và dõi theo nhau trên hành trình trưởng thành. Và hơn hết, mong tất cả chúng ta đều phải thành công nhé." },
     { group: 2, name: "Lê Nhã Thi", role: "", img: "image/avatars/LNT.jpg", dob: "23/04/2008", keywords:["Hoà đồng", "Vui Vẻ"], bio: "Hello, Nhã Thi đây. Mình là một người khá bình thường, nhưng lại có nhiều kỉ niệm vui trong lớp. Những giờ học ồn ào, mấy lần bị gọi tên bất ngờ hay những buổi cười nói với bạn bè chắc sẽ là thứ mình nhớ lâu nhất. Dù hiện tại còn nhiều điều chưa rõ ràng, mình vẫn có ước mơ riêng và đang cố gắng từng ngày để tiến gần hơn tới nó. Với mình, thanh xuân đơn giản là được học, được sai và được trưởng thành cùng những người xung quanh." },
     { group: 2, name: "Nguyễn Trần Minh Uyên", role: "", img: "image/avatars/NTMU.jpg", dob: "27/11/2008", keywords:["Bùng cháy", "Âm thầm", "Hoạt náo"], bio: "Hello mọi người mình là Minh Uyên đây, mình rất quý tập thể 12A2. Trong ba năm học vừa qua mình có rất nhiều kỉ niệm vui cùng lớp, nên mời các bạn cùng khám phá những kỉ niệm đó cùng bọn mình nha" },
@@ -236,10 +236,6 @@ function getZodiacImage(dob) {
 const seasonClasses = {
     1: "season-spring", 2: "season-summer", 3: "season-autumn", 4: "season-winter"
 };
-
-// ==========================================
-// --- SCROLL & KIỂM TRA MÀN HÌNH (MOBILE / PC) ---
-// ==========================================
 
 const observerOptions = { threshold: 0.01 };
 const observer = new IntersectionObserver((entries, observer) => {
@@ -399,11 +395,11 @@ function createCard(data, index) {
         });
     }
 
-    // Sự kiện click Tải thẻ
+    // Sự kiện click Tải thẻ cá nhân
     const downloadBtn = container.querySelector('.card-download-btn');
     if (downloadBtn) {
         downloadBtn.addEventListener('click', (e) => {
-            e.stopPropagation(); // Ngăn hành động lật thẻ hoặc đóng thẻ
+            e.stopPropagation(); 
             if (isAnimating) return; 
             downloadCardImage(container, data.name);
         });
@@ -412,7 +408,6 @@ function createCard(data, index) {
     return container;
 }
 
-// KHẮC PHỤC RỦI RO KỸ THUẬT KHI XOAY MÀN HÌNH/RESIZE
 window.addEventListener('resize', () => {
     const currentIsMobile = window.innerWidth <= 768;
     
@@ -420,9 +415,9 @@ window.addEventListener('resize', () => {
         isMobileView = currentIsMobile;
         
         if (activeCard) {
-            isAnimating = false; // Mở khóa ép buộc
+            isAnimating = false;
             closeCard();
-            overlay.classList.remove('active'); // Dọn dẹp ép buộc
+            overlay.classList.remove('active');
         }
         
         groupMusicObserver.disconnect();
@@ -432,17 +427,13 @@ window.addEventListener('resize', () => {
     }
 });
 
-// ==========================================
-// --- INTERACTION LOGIC (FIX SPAM CLICK LỖI 1) ---
-// ==========================================
-
 const overlay = document.getElementById('overlay');
 let activeCard = null;
 let placeholder = null; 
-let isAnimating = false; // CỜ CHỐNG SPAM CLICK
+let isAnimating = false; 
 
 function handleCardClick(card) {
-    if (isAnimating) return; // Khóa tương tác nếu thẻ đang bay ra/vào
+    if (isAnimating) return; 
 
     if (activeCard === card) {
         card.classList.toggle('is-flipped');
@@ -451,14 +442,13 @@ function handleCardClick(card) {
 
     if (activeCard) {
         closeCard();
-        // Tự động mở thẻ mới sau khi thẻ cũ đóng xong (650ms để an toàn)
         setTimeout(() => {
             if (!isAnimating) handleCardClick(card);
         }, 650);
         return;
     }
 
-    isAnimating = true; // Khóa
+    isAnimating = true; 
     isCardOpened = true; 
     fadeVolume(groupAudioPlayer, 0, 300, () => groupAudioPlayer.pause());
 
@@ -494,7 +484,6 @@ function handleCardClick(card) {
 
     startDisk(card);
 
-    // Mở khóa sau khi transition CSS hoàn tất
     setTimeout(() => {
         isAnimating = false;
     }, 650);
@@ -544,9 +533,9 @@ function toggleDiskState(container, body) {
 }
 
 function closeCard() {
-    if (!activeCard || isAnimating) return; // Nếu đang hoạt ảnh đóng/mở thì chặn
+    if (!activeCard || isAnimating) return; 
 
-    isAnimating = true; // Khóa
+    isAnimating = true; 
 
     if (diskTimeout) clearTimeout(diskTimeout);
     audioPlayer.pause();
@@ -585,7 +574,7 @@ function closeCard() {
     const currentCard = activeCard;
     const currentPlaceholder = placeholder;
 
-    activeCard = null; // Trả về null ngay để logic khóa được giải phóng đúng chuẩn
+    activeCard = null; 
     placeholder = null;
 
     setTimeout(() => {
@@ -606,7 +595,7 @@ function closeCard() {
         void currentCard.offsetWidth;
         currentCard.style.transition = '';
 
-        isAnimating = false; // Mở khóa
+        isAnimating = false; 
     }, 600); 
 }
 
@@ -620,7 +609,6 @@ renderCards();
 // ==========================================
 // --- GSAP ANIMATION CỦA TRANG ---
 // ==========================================
-
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
     let mm = gsap.matchMedia();
@@ -685,7 +673,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // ==========================================
 // --- BOTTOM NAVIGATION BAR ---
 // ==========================================
-
 const NAV_ICONS = {
     1: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V22"/><path d="M7.5 12a4.5 4.5 0 1 1 4.5 4.5"/><path d="M16.5 12a4.5 4.5 0 1 0-4.5 4.5"/><circle cx="12" cy="12" r="3"/></svg>`, 
     2: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>`, 
@@ -704,9 +691,7 @@ const GROUPS_NAMES = {
 
 function createBottomNav() {
     const navContainer = document.createElement('div');
-    navContainer.className = 'bottom-nav-container';
-    
-    [1, 2, 3, 4, 5].forEach(groupNum => {
+    navContainer.className = 'bottom-nav-container';[1, 2, 3, 4, 5].forEach(groupNum => {
         const item = document.createElement('a');
         item.className = 'bottom-nav-item';
         item.href = `#group-${groupNum}`;
@@ -818,23 +803,23 @@ function updateBottomNav() {
 }
 
 // ==========================================
-// --- TÍNH NĂNG XUẤT ẢNH THẺ (PNG) ---
+// --- TÍNH NĂNG XUẤT ẢNH THẺ ĐƠN CHẤT LƯỢNG CAO ---
 // ==========================================
 function downloadCardImage(card, name) {
     const btn = card.querySelector('.card-download-btn');
     const originalText = btn.innerHTML;
-    // Thay đổi UI của nút báo cho người dùng biết đang xử lý
     btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation: spinRecord 1s linear infinite"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg> Đang tạo...`;
     btn.style.pointerEvents = 'none';
 
-    // Dùng setTimeout để browser có thời gian cập nhật UI nút "Đang tạo..."
     setTimeout(() => {
         const isFlipped = card.classList.contains('is-flipped');
-        
-        // Clone thẻ ra 1 bản sao để tinh chỉnh CSS 3D mà không làm hỏng thẻ đang lật trên màn hình
         const cloneCard = card.cloneNode(true);
         
-        // Ẩn các thành phần dính theo thẻ nhưng không muốn đưa vào ảnh chụp
+        const rect = card.getBoundingClientRect();
+        cloneCard.style.width = rect.width + 'px';
+        cloneCard.style.height = rect.height + 'px';
+        cloneCard.style.margin = '0';
+        
         const elementsToHide =['.card-download-btn', '.disk-container', '.flip-hint', '.scroll-indicator'];
         elementsToHide.forEach(selector => {
             const el = cloneCard.querySelector(selector);
@@ -845,7 +830,6 @@ function downloadCardImage(card, name) {
         const front = cloneCard.querySelector('.card-front');
         const back = cloneCard.querySelector('.card-back');
         
-        // Gỡ bỏ CSS Rotate 3D vì thư viện chụp ảnh không hỗ trợ tốt việc lật mặt sau 180 độ
         inner.style.transform = 'none';
         inner.style.webkitTransform = 'none';
         
@@ -865,13 +849,12 @@ function downloadCardImage(card, name) {
             front.style.position = 'relative'; 
         }
 
-        // Đưa clone vào một khối vô hình và Append vào Body
         const exportContainer = document.createElement('div');
         exportContainer.style.position = 'fixed';
         exportContainer.style.top = '-9999px';
         exportContainer.style.left = '-9999px';
+        exportContainer.style.width = '100vw'; 
         
-        // Phải kế thừa theme của tổ để giữ đúng màu chữ/màu điểm nhấn (accent-color)
         const groupSection = card.closest('.group-section');
         if (groupSection) {
             groupSection.classList.forEach(cls => {
@@ -884,22 +867,19 @@ function downloadCardImage(card, name) {
         exportContainer.appendChild(cloneCard);
         document.body.appendChild(exportContainer);
         
-        // Chạy chụp hình render ra canvas
         if (typeof html2canvas !== 'undefined') {
             html2canvas(inner, {
                 backgroundColor: null,
-                scale: 2, // Chất lượng ảnh nhân 2 để có độ nét cao (Retina)
+                scale: 3, // NÂNG CHẤT LƯỢNG ẢNH TỪ 2 LÊN 3 (RẤT NÉT)
                 useCORS: true,
                 logging: false
             }).then(canvas => {
                 const link = document.createElement('a');
-                // Format lại tên tải xuống loại bỏ khoảng trắng
                 const safeName = name.replace(/\s+/g, '_');
                 link.download = `12A2_${safeName}_${isFlipped ? 'MatSau' : 'MatTruoc'}.png`;
                 link.href = canvas.toDataURL('image/png');
                 link.click();
                 
-                // Khôi phục trạng thái
                 document.body.removeChild(exportContainer);
                 btn.innerHTML = originalText;
                 btn.style.pointerEvents = 'auto';
@@ -908,7 +888,12 @@ function downloadCardImage(card, name) {
                 document.body.removeChild(exportContainer);
                 btn.innerHTML = originalText;
                 btn.style.pointerEvents = 'auto';
-                alert("Rất tiếc, có lỗi xảy ra khi tạo ảnh!");
+                
+                if (err.name === "SecurityError" || String(err).includes("Tainted")) {
+                    alert("⚠️ Lỗi bảo mật trình duyệt!\n\nBạn đang mở file trực tiếp (file://...). Vui lòng chạy web bằng 'Live Server' hoặc upload lên Github Pages để sử dụng được tính năng tải ảnh nhé.");
+                } else {
+                    alert("Rất tiếc, có lỗi xảy ra khi tạo ảnh! (Ấn F12 để xem chi tiết)");
+                }
             });
         } else {
             alert("Thư viện ảnh chưa tải xong! Vui lòng làm mới lại trang web.");
@@ -917,4 +902,110 @@ function downloadCardImage(card, name) {
             btn.style.pointerEvents = 'auto';
         }
     }, 150);
+}
+
+// ==========================================
+// --- TÍNH NĂNG TẢI TOÀN BỘ THẺ LỚP (ZIP) ---
+// ==========================================
+document.addEventListener("DOMContentLoaded", () => {
+    const downloadAllBtn = document.getElementById('download-all-btn');
+    if (downloadAllBtn) {
+        downloadAllBtn.addEventListener('click', async () => {
+            if (typeof JSZip === 'undefined' || typeof saveAs === 'undefined' || typeof html2canvas === 'undefined') {
+                alert("Đang tải các thư viện xử lý ZIP, vui lòng thử lại sau vài giây...");
+                return;
+            }
+            await downloadAllCardsToZip();
+        });
+    }
+});
+
+async function downloadAllCardsToZip() {
+    const zip = new JSZip();
+    const folder = zip.folder("The_A2_K28");
+    
+    const overlay = document.getElementById('zip-progress-overlay');
+    const progressText = document.getElementById('zip-progress-text');
+    overlay.classList.add('active');
+
+    // Tạo một khung dựng hình (studio) nằm ngoài màn hình
+    const studio = document.createElement('div');
+    studio.style.position = 'fixed';
+    studio.style.top = '-9999px';
+    studio.style.left = '-9999px';
+    studio.style.width = '100vw';
+    document.body.appendChild(studio);
+
+    for (let i = 0; i < membersData.length; i++) {
+        const member = membersData[i];
+        
+        // Cập nhật giao diện tiến độ
+        progressText.innerText = `Đang tạo thẻ: ${member.name} (${i + 1}/${membersData.length})...`;
+        await new Promise(r => setTimeout(r, 50)); // Đợi UI cập nhật để tránh treo trình duyệt
+
+        // Cấp class theme cho studio giống môi trường thực tế để màu sắc hiển thị đúng
+        studio.className = `group-theme-${member.group} ${seasonClasses[member.group]}`;
+        
+        // Dựng thẻ tạm
+        const cardEl = createCard(member, i);
+        
+        // Cấu hình lại CSS thẻ tạm chuẩn bị render chụp ảnh mặt trước (Card Front)
+        const inner = cardEl.querySelector('.card-inner');
+        const front = cardEl.querySelector('.card-front');
+        const elementsToHide =['.card-download-btn', '.disk-container', '.flip-hint', '.scroll-indicator', '.card-back'];
+        
+        elementsToHide.forEach(selector => {
+            const el = cardEl.querySelector(selector);
+            if (el) el.style.display = 'none';
+        });
+
+        cardEl.style.width = '450px';
+        cardEl.style.height = '280px';
+        cardEl.style.margin = '0';
+        inner.style.transform = 'none';
+        inner.style.webkitTransform = 'none';
+        front.style.transform = 'none';
+        front.style.webkitTransform = 'none';
+        front.style.backfaceVisibility = 'visible';
+        front.style.webkitBackfaceVisibility = 'visible';
+        front.style.position = 'relative';
+
+        studio.innerHTML = '';
+        studio.appendChild(cardEl);
+
+        try {
+            const canvas = await html2canvas(inner, {
+                backgroundColor: null,
+                scale: 3, // Nâng chất lượng lên 3x (High-Res)
+                useCORS: true,
+                logging: false
+            });
+
+            // Tách phần Data base64
+            const base64Data = canvas.toDataURL('image/png').split(',')[1];
+            
+            // Xóa dấu cách tiếng việt để tên file sạch sẽ gọn gàng
+            const safeName = member.name.replace(/\s+/g, '_');
+            folder.file(`To${member.group}_${safeName}.png`, base64Data, {base64: true});
+            
+        } catch (err) {
+            console.error(`Lỗi render thẻ ${member.name}:`, err);
+            // Tiếp tục vòng lặp cho các bạn khác nếu bạn này lỗi
+        }
+    }
+
+    progressText.innerText = "Đang nén file ZIP, vui lòng đợi...";
+    await new Promise(r => setTimeout(r, 100)); // Đợi để đổi dòng text
+
+    try {
+        const content = await zip.generateAsync({type: "blob"});
+        saveAs(content, "12A2_K28_All_Cards.zip");
+    } catch (err) {
+        console.error("Lỗi xuất ZIP:", err);
+        alert("Có lỗi khi tạo file ZIP. Vui lòng kiểm tra console!");
+    }
+
+    // Dọn dẹp
+    document.body.removeChild(studio);
+    overlay.classList.remove('active');
 }

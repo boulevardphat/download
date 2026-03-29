@@ -250,6 +250,9 @@ body {
     text-align: center;
     color: #fff;
     text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .class-title-main {
@@ -267,6 +270,89 @@ body {
     margin-top: 10px;
     opacity: 0.95;
     letter-spacing: 1px;
+}
+
+/* ==========================================
+   --- NÚT TẢI TOÀN BỘ (DOWNLOAD ALL) --- 
+   ========================================== */
+.download-all-btn {
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.download-all-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.download-all-btn:active {
+    transform: translateY(0);
+}
+
+/* ==========================================
+   --- MÀN HÌNH CHỜ XUẤT ZIP --- 
+   ========================================== */
+#zip-progress-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+}
+
+#zip-progress-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.zip-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255,255,255,0.1);
+    border-left-color: #3b82f6;
+    border-radius: 50%;
+    animation: spinRecord 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+#zip-progress-text {
+    color: #fff;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.zip-progress-subtext {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 80%;
 }
 
 /* --- GROUP SECTIONS --- */
@@ -416,17 +502,13 @@ body {
     .class-title-main { font-size: 2.2rem; } 
     .group-section { padding: 40px 10px; }
     .group-title-text { margin-bottom: 30px; font-size: 3rem; } 
-    .cover-container { height: 250px; }
-    .class-title-main { font-size: 2.2rem; } 
-    .group-section { padding: 40px 10px; }
-    .group-title-text { margin-bottom: 30px; font-size: 3rem; }
     .cards-wrapper { flex-direction: column; align-items: center; justify-content: center; flex-wrap: nowrap; padding: 0; padding-bottom: 20px; gap: 30px; }
     
     /* CHUYỂN THẺ SANG DẠNG DỌC (PORTRAIT) */
     .card-container { 
         width: 85%; 
         max-width: 320px;
-        height: 440px; /* FIX: Đặt cứng chiều cao để form thẻ dọc không bị xẹp */
+        height: 440px; 
         aspect-ratio: auto; 
         margin: 0 auto 20px auto !important; 
         left: auto; 
@@ -444,22 +526,20 @@ body {
 }
 
 /* --- CARD INTERNALS (3D LOGIC) --- */
-/* --- TÌM VÀ THAY ĐOẠN NÀY ĐỂ FIX LỖI 3D TRÊN IOS SAFARI --- */
-
 .card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
     transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d; /* Bắt buộc cho iOS */
+    -webkit-transform-style: preserve-3d; 
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     border-radius: 16px;
 }
 
 .card-container.is-focused.is-flipped .card-inner {
     transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg); /* Bắt buộc cho iOS */
+    -webkit-transform: rotateY(180deg); 
 }
 
 .card-face {
@@ -467,7 +547,7 @@ body {
     width: 100%;
     height: 100%;
     backface-visibility: hidden; 
-    -webkit-backface-visibility: hidden; /* Khắc phục lỗi biến mất thẻ */
+    -webkit-backface-visibility: hidden; 
     border-radius: 16px; 
     background: var(--card-bg); 
     border: 1px solid var(--border-color);
@@ -476,7 +556,7 @@ body {
     flex-direction: column;
     overflow: hidden; 
     z-index: 10; 
-    transform: translate3d(0, 0, 0); /* Khắc phục lỗi chớp viền khi lật */
+    transform: translate3d(0, 0, 0); 
     -webkit-transform: translate3d(0, 0, 0);
 }
 
@@ -605,15 +685,13 @@ body {
     pointer-events: none; 
     object-fit: contain;
     transform: rotate(-10deg) scale(1);
-    /* Thêm transition để ảnh chuyển động mượt giống avatar */
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.6s ease;
 }
 
-/* Hiệu ứng khi hover hoặc mở thẻ cho cung hoàng đạo */
 .card-container:hover .zodiac-bg,
 .card-container.is-focused .zodiac-bg {
-    transform: rotate(0deg) scale(1.2); /* Xoay thẳng ảnh lại và phóng to 20% */
-    opacity: 0.25; /* Tăng độ đậm lên một chút để nổi bật hơn khi tương tác */
+    transform: rotate(0deg) scale(1.2); 
+    opacity: 0.25; 
 }
 
 .header-image-container {
@@ -868,27 +946,15 @@ body.no-scroll, html.no-scroll {
 }
 
 /* ==========================================
-   --- CUSTOM CURSORS (4 MÙA & TRUNG TÍNH) --- 
+   --- CUSTOM CURSORS --- 
    ========================================== */
 body {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>✨</text></svg>") 16 16, auto;
 }
-
-.season-spring {
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>🌸</text></svg>") 16 16, auto;
-}
-
-.season-summer {
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>☀️</text></svg>") 16 16, auto;
-}
-
-.season-autumn {
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>🍁</text></svg>") 16 16, auto;
-}
-
-.season-winter {
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>❄️</text></svg>") 16 16, auto;
-}
+.season-spring { cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>🌸</text></svg>") 16 16, auto; }
+.season-summer { cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>☀️</text></svg>") 16 16, auto; }
+.season-autumn { cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>🍁</text></svg>") 16 16, auto; }
+.season-winter { cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>❄️</text></svg>") 16 16, auto; }
 
 a, button, .nav-link, .card-container, .disk-body, .feedback-btn {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text y='24' font-size='24'>👆</text></svg>") 16 0, pointer !important;
@@ -1124,7 +1190,7 @@ a, button, .nav-link, .card-container, .disk-body, .feedback-btn {
 
 .bottom-nav-item:hover, .bottom-nav-item.active {
     background: rgba(255, 255, 255, 0.9);
-    max-width: 160px; /* Đã giảm từ 250px xuống 160px cho gọn */
+    max-width: 160px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -1158,9 +1224,7 @@ a, button, .nav-link, .card-container, .disk-body, .feedback-btn {
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
-.bottom-nav-container.nav-dark-mode .bottom-nav-item {
-    color: #f8fafc; 
-}
+.bottom-nav-container.nav-dark-mode .bottom-nav-item { color: #f8fafc; }
 .bottom-nav-container.nav-dark-mode .bottom-nav-item:hover,
 .bottom-nav-container.nav-dark-mode .bottom-nav-item.active {
     background: rgba(255, 255, 255, 0.2);
@@ -1168,19 +1232,9 @@ a, button, .nav-link, .card-container, .disk-body, .feedback-btn {
 }
 
 @media (max-width: 768px) {
-    .bottom-nav-container {
-        bottom: 20px;
-        padding: 6px;
-        gap: 6px;
-    }
-    .bottom-nav-item {
-        height: 40px;
-        max-width: 40px;
-        padding: 0 10px;
-    }
-    .bottom-nav-item:hover, .bottom-nav-item.active {
-        max-width: 140px; /* Đã giảm mạnh từ 220px xuống 140px để tránh tràn màn hình */
-    }
+    .bottom-nav-container { bottom: 20px; padding: 6px; gap: 6px; }
+    .bottom-nav-item { height: 40px; max-width: 40px; padding: 0 10px; }
+    .bottom-nav-item:hover, .bottom-nav-item.active { max-width: 140px; }
     .nav-icon svg { width: 18px; height: 18px; }
     .nav-text { font-size: 13px; }
 }
@@ -1239,9 +1293,7 @@ a, button, .nav-link, .card-container, .disk-body, .feedback-btn {
     transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.banner-to5:hover .banner-bg {
-    transform: scale(1.05);
-}
+.banner-to5:hover .banner-bg { transform: scale(1.05); }
 
 .banner-to5 .banner-overlay {
     position: absolute;
@@ -1253,9 +1305,7 @@ a, button, .nav-link, .card-container, .disk-body, .feedback-btn {
     transition: background 0.4s ease;
 }
 
-.banner-to5:hover .banner-overlay {
-    background: rgba(0, 0, 0, 0.5); 
-}
+.banner-to5:hover .banner-overlay { background: rgba(0, 0, 0, 0.5); }
 
 .banner-to5 .banner-content {
     position: relative;
@@ -1281,88 +1331,30 @@ a, button, .nav-link, .card-container, .disk-body, .feedback-btn {
     transition: transform 0.4s ease;
 }
 
-.banner-to5:hover .banner-title {
-    transform: scale(1.03);
-}
+.banner-to5:hover .banner-title { transform: scale(1.03); }
 
 @media (max-width: 768px) {
-    .banner-to5 {
-        height: 100px; 
-        margin-bottom: 10px !important; 
-    }
+    .banner-to5 { height: 100px; margin-bottom: 10px !important; }
 }
 
 /* ========================================================
    CSS CHI TIẾT TRONG THẺ KHI Ở MOBILE (BỐ CỤC DỌC)
    ======================================================== */
 @media (max-width: 768px) {
-    /* Chuyển nội dung thẻ thành cột dọc (ảnh trên, chữ dưới) */
-    .card-content {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 30px 20px 25px 20px;
-        text-align: center;
-        gap: 15px;
-    }
-
-    /* Ảnh đại diện được căn giữa và cho to ra xíu */
-    .photo-area {
-        width: 130px;
-        height: 170px;
-        margin-bottom: 5px;
-    }
-
-    /* Thông tin chữ căn giữa */
-    .info-area {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .field {
-        display: flex;
-        flex-direction: column; /* Label ở trên, Value ở dưới */
-        align-items: center;
-        margin-bottom: 12px;
-        width: 100%;
-    }
-
-    .label {
-        margin-bottom: 4px;
-    }
-
-    /* Text thông tin rớt dòng tự nhiên */
-    .value {
-        white-space: normal; 
-        word-wrap: break-word;
-        text-align: center;
-        font-size: 15px;
-        width: 100%;
-    }
-
-    /* Căn giữa 3 cái Hashtags, cho rớt dòng */
-    .keywords {
-        justify-content: center;
-        margin-top: 5px;
-        flex-wrap: wrap; 
-        gap: 8px;
-    }
-
-    .keyword {
-        font-size: 10px;
-        padding: 5px 12px;
-    }
-
-    /* Căn lề vừa vặn cho mặt sau khi đang lật */
-    .back-container {
-        padding: 25px 20px;
-    }
+    .card-content { flex-direction: column; align-items: center; justify-content: center; padding: 30px 20px 25px 20px; text-align: center; gap: 15px; }
+    .photo-area { width: 130px; height: 170px; margin-bottom: 5px; }
+    .info-area { width: 100%; display: flex; flex-direction: column; align-items: center; }
+    .field { display: flex; flex-direction: column; align-items: center; margin-bottom: 12px; width: 100%; }
+    .label { margin-bottom: 4px; }
+    .value { white-space: normal; word-wrap: break-word; text-align: center; font-size: 15px; width: 100%; }
+    .keywords { justify-content: center; margin-top: 5px; flex-wrap: wrap; gap: 8px; }
+    .keyword { font-size: 10px; padding: 5px 12px; }
+    .back-container { padding: 25px 20px; }
 }
+
 /* --- KHUNG KHUYẾN KHÍCH DÙNG PC --- */
 .desktop-recommend-banner {
-    display: none; /* Ẩn mặc định trên PC */
+    display: none; 
     width: 100%;
     padding: 15px 20px 25px 20px;
     box-sizing: border-box;
@@ -1388,39 +1380,16 @@ a, button, .nav-link, .card-container, .disk-body, .feedback-btn {
     margin: 0 auto;
 }
 
-.recommend-box svg {
-    flex-shrink: 0;
-    color: #3b82f6;
+.recommend-box svg { flex-shrink: 0; color: #3b82f6; }
+
+@media (max-width: 768px) {
+    .desktop-recommend-banner { display: block; }
+    .cover-container { height: 380px !important; overflow: hidden; }
+    .cover-image { transform: scale(1.5); transform-origin: center center; }
+    .class-title-main { font-size: 1.9rem !important; margin-bottom: 5px; }
+    .class-subtitle { font-size: 0.9rem !important; padding: 0 15px; }
 }
 
-/* --- OVERRIDE LẠI GIAO DIỆN MOBILE (COVER & TEXT) --- */
-@media (max-width: 768px) {
-    .desktop-recommend-banner {
-        display: block; /* Chỉ hiện khung trên mobile */
-    }
-    
-    /* 1. Giãn chiều cao cover ra để không bị lùn */
-    .cover-container { 
-        height: 380px !important; 
-        overflow: hidden; /* Tránh video tràn ra ngoài khi zoom */
-    }
-    
-    /* 2. Zoom video ra, cắt 2 bên chỉ giữ 4 phần giữa */
-    .cover-image {
-        transform: scale(1.5); /* Tỷ lệ zoom 1.5 khớp với yêu cầu của bạn */
-        transform-origin: center center;
-    }
-    
-    /* 3. Scale nhỏ text lại */
-    .class-title-main { 
-        font-size: 1.9rem !important; 
-        margin-bottom: 5px;
-    }
-    .class-subtitle { 
-        font-size: 0.9rem !important; 
-        padding: 0 15px;
-    }
-}
 /* ==========================================
    --- DOWNLOAD BUTTON STYLES --- 
    ========================================== */
@@ -1448,7 +1417,6 @@ a, button, .nav-link, .card-container, .disk-body, .feedback-btn {
     z-index: 20;
 }
 
-/* Nút sẽ hiện ra với hiệu ứng trượt xuống khi thẻ đang được focus */
 .card-container.is-focused .card-download-btn {
     opacity: 1;
     visibility: visible;
@@ -1461,16 +1429,9 @@ a, button, .nav-link, .card-container, .disk-body, .feedback-btn {
     transform: translateX(-50%) translateY(-2px);
 }
 
-.card-download-btn:active {
-    transform: translateX(-50%) translateY(0);
-}
+.card-download-btn:active { transform: translateX(-50%) translateY(0); }
 
-/* Tinh chỉnh lại khoảng cách trên giao diện điện thoại */
 @media (max-width: 768px) {
-    .card-download-btn {
-        bottom: -40px;
-    }
-    .card-container.is-focused .card-download-btn {
-        bottom: -55px;
-    }
+    .card-download-btn { bottom: -40px; }
+    .card-container.is-focused .card-download-btn { bottom: -55px; }
 }
